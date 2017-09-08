@@ -1,0 +1,18 @@
+<ion-header class="cz-dark-tools-bar">
+    <ion-navbar>
+        <ion-title>test</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="no-scroll">
+    <super-tabs id="mainTabs"
+                height="44px"
+                selectedTabIndex="1"
+                toolbarColor="gray"
+                toolbarBackground="white"
+                indicatorColor="primary"
+                [config]="{ sideMenu: 'left' }" (tabSelect)="onTabSelect($event)">
+        <super-tab [root]="homePage" title="1" ></super-tab>
+        <super-tab [root]="aboutPage" title="2" ></super-tab>
+        <super-tab [root]="contactPage" title="3" ></super-tab>
+    </super-tabs>
+</ion-content>

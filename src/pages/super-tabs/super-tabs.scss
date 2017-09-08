@@ -1,0 +1,36 @@
+page-super-tabs {
+    .toolbar-md {
+        padding: 0 !important;
+        min-height: 36px !important;
+    }
+
+    .segment-md .segment-button {
+        line-height: 3.6rem;
+    }
+    //tab字体改为16px 未选择的tab的color设置为#999
+    super-tab-button {
+        &:not(.selected) {
+            ion-icon, span:not(.badge) {
+                color: #999999 !important;
+            }
+        }
+        font-size: 16px !important;
+    }
+    //选中的tab的color设置为橙色
+    .selected {
+        span {
+            color: #ff6126 !important;
+        }
+    }
+    //底部阴影去掉
+    super-tabs-toolbar > ion-toolbar.toolbar {
+        &::after {
+            height: 0 !important;
+        }
+    }
+}
+
+
+.ios .ion-page.show-page~.nav-decor {
+    background-color: transparent !important;
+}
